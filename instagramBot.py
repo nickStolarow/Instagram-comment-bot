@@ -52,7 +52,7 @@ def comment(browser):
                 f'@{usernames[num]}')
             # Post button
             browser.find_element_by_xpath(
-                '/html/body/div[1]/section/main/div/div[1]/article/div[3]/section[3]/div/form/button').click()
+                '/html/body/div[1]/section/main/div/div[1]/article/div[3]/section[3]/div/form/button[2]').click()
 
             sleep(sec)
         except Exception:
@@ -60,7 +60,7 @@ def comment(browser):
             sleep(360)
             # Click post button again
             browser.find_element_by_xpath(
-                '/html/body/div[1]/section/main/div/div[1]/article/div[3]/section[3]/div/form/button').click()
+                '/html/body/div[1]/section/main/div/div[1]/article/div[3]/section[3]/div/form/button[2]').click()
 
 
 if __name__ == '__main__':
